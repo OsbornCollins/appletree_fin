@@ -1,0 +1,8 @@
+curl -i -d "$BODY" localhost:4000/v1/info
+curl -X PUT -d "$BODY" localhost:4000/v1/schools/<<id>>
+
+#Working
+BODY='{"name":"ABC", "level":"HighSchool", "contact":"Jane Smith", "phone":"501-615-5123", "email":"oj.collins@xyz.edu.bz", "website":"http://xyz.edu.bz", "address":"5470 K Street, Kings Park", "mode":["online","face-to-face"]}'
+
+#Empty Occupation
+BODY='{"name":"Osborn Collins", "occupation":"", "phone":"501-615-5123", "email":"oj.collins@hotmail.com", "country":"Belize", "address":"5470 K Street, Kings Park"}'

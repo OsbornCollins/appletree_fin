@@ -1,0 +1,9 @@
+curl -d '<?xml version="1.0" encoding="UTF-8"?><note><to>apples</to></note>' localhost:4000/v1/schools
+curl -d '{"name":"Peach",}' localhost:4000/v1/schools
+curl -d '["apple":"tree"]' localhost:4000/v1/schools
+curl -d '{"name":5}' localhost:4000/v1/schools
+curl -X POST localhost:4000/v1/schools
+curl -i -d @/tmp/max.json localhost:4000/v1/schools
+curl -i -d '{"name":"Peach","city": "Belize"}' localhost:4000/v1/schools
+curl -i -d '{"name":"Peach"}{"city": "Belize"}' localhost:4000/v1/schools
+curl -i -d '{"name":"Peach"}:~[]~' localhost:4000/v1/schools
